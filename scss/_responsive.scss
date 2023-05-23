@@ -14,16 +14,21 @@
                     width: 75px;
                     height: 75px;
                 }
-                div.container-fluid{
-                    background-color: $colorMenuNav;
-                }
                 a{
                     font-family: $fuentePrincipal;
+                    font-size: 15px;
                 }
                 .navbar-brand{
                     padding: 0;
-                }
-                
+                    margin-right: 0;
+                } 
+                .navbar-toggler{
+                    width: 35px;
+                    padding: 4px;
+                } 
+                .navbar-toggler-icon{
+                    width: 25px;
+                }          
             }
         }
 
@@ -60,22 +65,37 @@
     .foto1{
         margin: 5px 10px 5px 10px;
         background-image: url(../multimedia/destacadoMaiaraHor.png);
+        &:hover{
+            background-image: url("../multimedia/MaiaraGifChico.gif");
+        }
     }
 
     .foto2{
         background-image: url(../multimedia/destacadoHenrJuHor.png);
+        &:hover{
+            background-image: url("../multimedia/HenrGifChico.gif");
+        }
     }
 
     .foto3{
         background-image: url(../multimedia/destacadoLuanHor.png);
+        &:hover{
+            background-image: url("../multimedia/LuanGifChico.gif");
+        }
     }
 
     .foto4{
         background-image: url(../multimedia/destacadoMariliaHor.jpg);
+        &:hover{
+            background-image: url("../multimedia/MariliaGifChico.gif");
+        }
     }
     .foto5{
         margin-bottom: 10px;
         background-image: url(../multimedia/destacadoGusLimaHor.png);
+        &:hover{
+            background-image: url("../multimedia/GustavoGifChico.gif");
+        }
     }
 
     /* TOP 10 */
@@ -139,8 +159,8 @@
         }
     }
     .boxArtistasIndividual{
-        width: 80%;
-        margin: 30px 40px;
+        width: 90%;
+        margin: 30px 20px;
     }    
     .boxFlex{
         flex-flow: wrap;
@@ -148,7 +168,7 @@
     }
     .boxArtistas{
          h2{
-            font-size: 15px;
+            font-size: 20px;
             padding: 10px 10px 0px 15px;
         }
         .boxArtistasFoto{
@@ -157,7 +177,23 @@
             padding: 5px 10px;
         }
         p{
-             padding: 10px 10px;
+            font-size: 15px;
+            padding: 10px 10px;
+        }
+
+        .enlaces{
+            justify-content: center;
+        }
+        .enlacesIz{
+            justify-content: center;
+            margin: 0;
+        }
+    
+        a{
+        margin: 0 10px 20px 10px;
+        font-weight: normal;
+        width:130px;
+        height: 70px;
         }
     }
     /* CONOCE MAS */
@@ -169,32 +205,36 @@
         }
     }
     .historiaGrid{
-        width: 80%;
+        width: 90%;
         grid-template-columns: 0.7fr; 
         grid-template-rows: 0.7fr 0.7fr 0.5fr; 
         grid-template-areas: 
         "raiz" 
         "sofrencia"
         "referentes"; 
+        margin: 20px 20px;
     }    
     .raiz{
-        width: 100%;
-        margin: 20px 20px;
+        width: 90%;
+        /* margin: 20px 30px; */
         @include flexWrap;
         h2{
             font-size: 20px ;
+        }
+        .raizFlex{
+            @include flexWrap;
         }
         p{
             width: 90%;
             font-size: 15px;
             padding: 5px 10px 5px 5px ;
-            margin-right: 0;
+            margin: 0;
         }
         .raizVideo{
-            width: 400px;
+            width: 90%;
         }
         .raizFoto{
-            width: 400px;
+            width: 90%;
         }
     }   
     .sofrencia{
@@ -204,26 +244,30 @@
         h2{
             font-size: 20px ;
         }
+        .sofrenciaFlex{
+            @include flexWrap;
+        }
         p{
             width: 90%;
             font-size: 15px;
-            padding: 10px 10px 5px 10px ;
+            padding: 5px 10px 5px 5px ;
             margin-bottom: 0;
         }
         .sofrenciaVideo{
-            width: 400px;
-            padding: 10px 20px 20px 20px;
+            width: 90%;
+            
         }
         .sofrenciaFoto{
-            width: 400px;
-            padding-bottom: 20px;
+            width: 90%;
+            height: 200px;
+            
         }
     }               
     .carrouselBox{
-        width: 400px;
+        width: 90%;
         .referentesFoto{
             width: 250px;
-            margin: 10px 80px;
+            margin: 10px 60px;
         }
         h2{
             font-size: 25px ;

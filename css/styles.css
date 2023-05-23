@@ -171,17 +171,25 @@ header .navbar {
 }
 .foto1:hover, .foto5:hover, .foto4:hover, .foto3:hover, .foto2:hover {
   opacity: 1;
-  background-image: url("../multimedia/MaiaraMaraisaGif2.gif");
+  background-image: url("../multimedia/MaiaraGifAlto.gif");
 }
 
 .foto2 {
   grid-area: foto2;
   background-image: url("../multimedia/destacadoHenrJu.png");
 }
+.foto2:hover {
+  opacity: 1;
+  background-image: url("../multimedia/HenrGifAlto.gif");
+}
 
 .foto3 {
   grid-area: foto3;
   background-image: url("../multimedia/destacadoLuan.png");
+}
+.foto3:hover {
+  opacity: 1;
+  background-image: url("../multimedia/LuanGifAlto.gif");
 }
 
 .foto4 {
@@ -189,7 +197,7 @@ header .navbar {
   background-image: url("../multimedia/destacadoMarilia.png");
 }
 .foto4:hover {
-  background-image: url("../multimedia/MariliaMendozaGif300x800.gif");
+  background-image: url("../multimedia/MariliaGifAlto.gif");
 }
 
 .foto5 {
@@ -197,7 +205,7 @@ header .navbar {
   background-image: url("../multimedia/destacadoGusLima.png");
 }
 .foto5:hover {
-  background-image: url("../multimedia/GustavoLimaGif.gif");
+  background-image: url("../multimedia/GustavoGifAlto.gif");
 }
 
 .fotoPrincipalFondoArtistas {
@@ -353,6 +361,7 @@ header .navbar {
   padding: 20px 20px 10px 20px;
   font-weight: 500;
   font-family: "Secular One", sans-serif;
+  text-align: center;
 }
 .raiz p {
   width: 600px;
@@ -382,6 +391,7 @@ header .navbar {
   padding: 20px 20px 10px 20px;
   font-weight: 500;
   font-family: "Secular One", sans-serif;
+  text-align: center;
 }
 .sofrencia p {
   width: 600px;
@@ -594,14 +604,20 @@ header .navbar {
     width: 75px;
     height: 75px;
   }
-  header .navbar div.container-fluid {
-    background-color: rgba(224, 225, 221, 0.6);
-  }
   header .navbar a {
     font-family: "Montserrat", sans-serif;
+    font-size: 15px;
   }
   header .navbar .navbar-brand {
     padding: 0;
+    margin-right: 0;
+  }
+  header .navbar .navbar-toggler {
+    width: 35px;
+    padding: 4px;
+  }
+  header .navbar .navbar-toggler-icon {
+    width: 25px;
   }
   /* INICIO */
   .fotoPrincipalFondoInicio {
@@ -632,18 +648,33 @@ header .navbar {
     margin: 5px 10px 5px 10px;
     background-image: url(../multimedia/destacadoMaiaraHor.png);
   }
+  .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover {
+    background-image: url("../multimedia/MaiaraGifChico.gif");
+  }
   .foto2 {
     background-image: url(../multimedia/destacadoHenrJuHor.png);
+  }
+  .foto2:hover {
+    background-image: url("../multimedia/HenrGifChico.gif");
   }
   .foto3 {
     background-image: url(../multimedia/destacadoLuanHor.png);
   }
+  .foto3:hover {
+    background-image: url("../multimedia/LuanGifChico.gif");
+  }
   .foto4 {
     background-image: url(../multimedia/destacadoMariliaHor.jpg);
+  }
+  .foto4:hover {
+    background-image: url("../multimedia/MariliaGifChico.gif");
   }
   .foto5 {
     margin-bottom: 10px;
     background-image: url(../multimedia/destacadoGusLimaHor.png);
+  }
+  .foto5:hover {
+    background-image: url("../multimedia/GustavoGifChico.gif");
   }
   /* TOP 10 */
   .fotoPrincipalFondoTop10 {
@@ -703,15 +734,15 @@ header .navbar {
     font-size: 30px;
   }
   .boxArtistasIndividual {
-    width: 80%;
-    margin: 30px 40px;
+    width: 90%;
+    margin: 30px 20px;
   }
   .boxFlex {
     flex-flow: wrap;
     padding: 10px;
   }
   .boxArtistas h2 {
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 10px 0px 15px;
   }
   .boxArtistas .boxArtistasFoto {
@@ -720,7 +751,21 @@ header .navbar {
     padding: 5px 10px;
   }
   .boxArtistas p {
+    font-size: 15px;
     padding: 10px 10px;
+  }
+  .boxArtistas .enlaces, .boxArtistas .enlacesIz {
+    justify-content: center;
+  }
+  .boxArtistas .enlacesIz {
+    justify-content: center;
+    margin: 0;
+  }
+  .boxArtistas a {
+    margin: 0 10px 20px 10px;
+    font-weight: normal;
+    width: 130px;
+    height: 70px;
   }
   /* CONOCE MAS */
   .fotoPrincipalFondoConoce {
@@ -733,14 +778,15 @@ header .navbar {
     font-size: 30px;
   }
   .historiaGrid {
-    width: 80%;
+    width: 90%;
     grid-template-columns: 0.7fr;
     grid-template-rows: 0.7fr 0.7fr 0.5fr;
     grid-template-areas: "raiz" "sofrencia" "referentes";
+    margin: 20px 20px;
   }
   .raiz {
-    width: 100%;
-    margin: 20px 20px;
+    width: 90%;
+    /* margin: 20px 30px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -749,17 +795,23 @@ header .navbar {
   .raiz h2 {
     font-size: 20px;
   }
+  .raiz .raizFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .raiz p {
     width: 90%;
     font-size: 15px;
     padding: 5px 10px 5px 5px;
-    margin-right: 0;
+    margin: 0;
   }
   .raiz .raizVideo {
-    width: 400px;
+    width: 90%;
   }
   .raiz .raizFoto {
-    width: 400px;
+    width: 90%;
   }
   .sofrencia {
     width: 90%;
@@ -772,26 +824,31 @@ header .navbar {
   .sofrencia h2 {
     font-size: 20px;
   }
+  .sofrencia .sofrenciaFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .sofrencia p {
     width: 90%;
     font-size: 15px;
-    padding: 10px 10px 5px 10px;
+    padding: 5px 10px 5px 5px;
     margin-bottom: 0;
   }
   .sofrencia .sofrenciaVideo {
-    width: 400px;
-    padding: 10px 20px 20px 20px;
+    width: 90%;
   }
   .sofrencia .sofrenciaFoto {
-    width: 400px;
-    padding-bottom: 20px;
+    width: 90%;
+    height: 200px;
   }
   .carrouselBox {
-    width: 400px;
+    width: 90%;
   }
   .carrouselBox .referentesFoto {
     width: 250px;
-    margin: 10px 80px;
+    margin: 10px 60px;
   }
   .carrouselBox h2 {
     font-size: 25px;

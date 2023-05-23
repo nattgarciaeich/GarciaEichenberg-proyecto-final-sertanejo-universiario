@@ -68,7 +68,7 @@
     opacity: 0.6;
     &:hover{
         opacity: 1;
-        background-image: url("../multimedia/MaiaraMaraisaGif2.gif");
+        background-image: url("../multimedia/MaiaraGifAlto.gif");
     }
 }
 
@@ -76,12 +76,20 @@
     @extend .foto1;
     grid-area: foto2;
     background-image: url("../multimedia/destacadoHenrJu.png");
+    &:hover{
+        opacity: 1;
+        background-image: url("../multimedia/HenrGifAlto.gif");
+    }
 }
 
 .foto3{
     @extend .foto1;
     grid-area: foto3;
     background-image: url("../multimedia/destacadoLuan.png");
+    &:hover{
+        opacity: 1;
+        background-image: url("../multimedia/LuanGifAlto.gif");
+    }
 }
 
 .foto4{
@@ -89,7 +97,7 @@
     grid-area: foto4;
     background-image: url("../multimedia/destacadoMarilia.png");
     &:hover{
-        background-image: url("../multimedia/MariliaMendozaGif300x800.gif");
+        background-image: url("../multimedia/MariliaGifAlto.gif");
     }
 }
 
@@ -98,7 +106,7 @@
     grid-area: foto5;
     background-image: url("../multimedia/destacadoGusLima.png");
     &:hover{
-        background-image: url("../multimedia/GustavoLimaGif.gif");
+        background-image: url("../multimedia/GustavoGifAlto.gif");
     }
 }
 
