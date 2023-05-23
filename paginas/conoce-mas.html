@@ -61,18 +61,54 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- nav responsive -->
+        <nav class="navbar fixed-top" style="background-color: rgba(224,225,221,.6);">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> <img src="../multimedia/logo2-removebg-preview.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center logoMenu">Sertanejo Universitario
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(224,225,221);">
+              <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sertanejo Universitario</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="conoce-mas.html">Conoce más</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="top10.html">Top 10</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="artistas.html">Artistas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>               
+              </ul>
+              </div>
+          </div>
+          </div>
+      </nav>
     </header>
 
     <main>
         <div class="fotoPrincipalFondoConoce">
             <h1>Te contamos más de su historia </h1>
-        <!-- <img src="../multimedia/portadaArtistas.jpg" alt="Conoce mas" class="foto-principal"> -->
         </div>
 
     </main>
 
-    <div class="historiaGrid">
-        <section class="raiz" data-aos="zoom-out-right">
+    <section>
+      <div class="historiaGrid">
+        <article class="raiz" data-aos="zoom-out-right">
               <h2>Inícios: Sertanejo Raíz</h2>
               <div>
                 <img src="../multimedia/sertanejoRaiz.jpg" alt="Sertanejo Raiz" class="raizFoto">
@@ -85,9 +121,9 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DqQ8lMKl14M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="raizVideo"></iframe>
 
               </div>
-          </section>
+        </article>
 
-          <section class="sofrencia" data-aos="zoom-out-left">
+          <article class="sofrencia" data-aos="zoom-out-left">
               <h2>Cambios: Sertanejo Sofrença y Universitario</h2>
               <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wm2iBcrCSzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="sofrenciaVideo"></iframe>
@@ -100,60 +136,61 @@
                 <img src="../multimedia/PatroasPortada.jpg" alt="Sertanejo SOfrencia" class="sofrenciaFoto">
 
               </div>
-        </section>
+          </article>
 
-        <section class="carrouselBox">
+        <article class="carrouselBox">
           <h2>Referentes de la musica Sertaneja</h2>
-          <div id="carouselExampleIndicators" class="carousel slide">
-             <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-             </div>
-             <div class="carousel-inner">
-               <div class="carousel-item active">
-                 <img src="../multimedia/raizRef.png" class="d-block referentesFoto" alt="...">
-               </div>.
-               <div class="carousel-item">
-                 <img src="../multimedia/raizRef2.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/raizRef4.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/raizRef5.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/sofrenzaRef2.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/sofrenzaRef3.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/raizRef3.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/sofrenzaRef4.png" class="d-block referentesFoto" alt="...">
-               </div>
-               <div class="carousel-item">
-                 <img src="../multimedia/sofrenzaRef5.png" class="d-block referentesFoto" alt="...">
-               </div>
-             </div>
-             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-             </button>
-             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-             </button>
-           </div>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../multimedia/raizRef.png" class="d-block referentesFoto" alt="...">
+                  </div>.
+                  <div class="carousel-item">
+                    <img src="../multimedia/raizRef2.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/raizRef4.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/raizRef5.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/sofrenzaRef2.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/sofrenzaRef3.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/raizRef3.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/sofrenzaRef4.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../multimedia/sofrenzaRef5.png" class="d-block referentesFoto" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </article>
         </section>
   </div>
       

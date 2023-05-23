@@ -24,6 +24,11 @@ body {
 
 /* MENU */
 header .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   list-style-type: square;
   position: fixed;
   top: 0;
@@ -31,39 +36,28 @@ header .menu {
   background-color: rgba(224, 225, 221, 0.6);
   text-align: center;
   width: 100vw;
-  height: 150px;
+  height: 100px;
+  padding-left: 0;
 }
 header .menu li {
   display: inline-block;
   padding: 0px 10px;
 }
 header .menu li .logoMenu {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 header .menu li a {
   color: black;
   font-weight: normal;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   display: block;
   padding: 0px 20px;
   /* padding-bottom: 10px; */
 }
 header .navbar {
   display: none;
-  background-color: rgba(224, 225, 221, 0.6);
-  width: 100vw;
-  height: 85px;
-}
-header .navbar .logoMenu {
-  width: 80px;
-  height: 80px;
-  margin-top: 0;
-}
-header .navbar a {
-  font-family: "Secular One", sans-serif;
-  font-size: 20px;
 }
 
 /* FOOTER */
@@ -109,7 +103,7 @@ header .navbar a {
   position: relative;
   background: #d9ae94;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100vw;
   height: 900px;
 }
@@ -210,7 +204,7 @@ header .navbar a {
   position: relative;
   background: #d9ae94;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100vw;
   height: 900px;
 }
@@ -305,7 +299,7 @@ header .navbar a {
   position: relative;
   background: #d9ae94;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100vw;
   height: 900px;
 }
@@ -336,7 +330,7 @@ header .navbar a {
 
 .historiaGrid {
   display: grid;
-  width: 100wv;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.6fr;
   grid-template-areas: "raiz sofrencia" "referentes referentes";
@@ -423,7 +417,7 @@ header .navbar a {
   position: relative;
   background: #d9ae94;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100vw;
   height: 900px;
 }
@@ -458,7 +452,7 @@ header .navbar a {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "form";
-  width: 100wv;
+  width: 100%;
   justify-items: center;
   align-items: center;
 }
@@ -509,7 +503,7 @@ header .navbar a {
   position: relative;
   background: #d9ae94;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100vw;
   height: 900px;
 }
@@ -589,35 +583,29 @@ header .navbar a {
   /* MENU */
   header .menu {
     display: none;
-    /* width: 100vw; 
-    height: 85px; 
-        ul{
-            display: flex;
-            flex-direction: wrap;
-            justify-content: space-around;
-            align-items: center;
-            padding: 0;
-
-            li{
-                padding: 0;
-                .logoMenu{
-                    width: 90px;
-                    height: 90px;
-                    padding: 0;
-                }
-                a{
-                font-size: 15px;
-                padding: 0px 0px;
-                } 
-            }
-        } */
   }
   header .navbar {
-    display: inline-block;
+    display: inline-flex;
+    height: 75px;
+    padding: 0;
+    background-color: rgba(224, 225, 221, 0.6);
+  }
+  header .navbar .logoMenu {
+    width: 75px;
+    height: 75px;
+  }
+  header .navbar div.container-fluid {
+    background-color: rgba(224, 225, 221, 0.6);
+  }
+  header .navbar a {
+    font-family: "Montserrat", sans-serif;
+  }
+  header .navbar .navbar-brand {
+    padding: 0;
   }
   /* INICIO */
   .fotoPrincipalFondoInicio {
-    margin-top: 85px;
+    margin-top: 75px;
     width: 90%;
     height: 500px;
   }
@@ -626,7 +614,7 @@ header .navbar a {
     font-size: 30px;
   }
   .destacadosGrid {
-    margin: 40px 50px;
+    margin: 40px 20px;
     width: 90%;
     height: 800px;
     grid-template-columns: 1fr;
@@ -659,7 +647,7 @@ header .navbar a {
   }
   /* TOP 10 */
   .fotoPrincipalFondoTop10 {
-    margin-top: 85px;
+    margin-top: 75px;
     width: 90%;
     height: 500px;
   }
@@ -686,7 +674,7 @@ header .navbar a {
   }
   /* CONTACTO */
   .fotoPrincipalFondoContacto {
-    margin-top: 85px;
+    margin-top: 75px;
     width: 90%;
     height: 500px;
   }
@@ -706,7 +694,7 @@ header .navbar a {
   }
   /* ARTISTAS */
   .fotoPrincipalFondoArtistas {
-    margin-top: 85px;
+    margin-top: 75px;
     width: 90%;
     height: 500px;
   }
@@ -736,7 +724,7 @@ header .navbar a {
   }
   /* CONOCE MAS */
   .fotoPrincipalFondoConoce {
-    margin-top: 85px;
+    margin-top: 75px;
     width: 90%;
     height: 500px;
   }
@@ -745,6 +733,7 @@ header .navbar a {
     font-size: 30px;
   }
   .historiaGrid {
+    width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 0.7fr 0.5fr;
     grid-template-areas: "raiz" "sofrencia" "referentes";

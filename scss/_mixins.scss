@@ -6,8 +6,8 @@
     align-items: center;
 }
 
-@mixin fotosPrincipales{
-    margin-top: 85px;
+@mixin fotosPrincipalesResp{
+    margin-top: 75px;
     width: 90%;
     height: 500px;
 }
@@ -17,4 +17,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@mixin fotosPrincipales{
+    position: relative;
+    background:$colorFondoClaro;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100vw;
+    height: 900px;
 }

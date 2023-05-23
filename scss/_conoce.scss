@@ -1,10 +1,5 @@
 .fotoPrincipalFondoConoce{
-    position: relative;
-    background:$colorFondoClaro;
-    overflow: hidden;
-    margin-top: 150px;
-    width: 100vw;
-    height: 900px;
+    @include fotosPrincipales;
     h1 {
         font-family: $fuenteEspecial;
         padding: 300px 100px;
@@ -33,7 +28,7 @@
 
 .historiaGrid{
     display: grid;
-    width: 100wv;
+    width: 100%;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 0.6fr; 
     grid-template-areas: 

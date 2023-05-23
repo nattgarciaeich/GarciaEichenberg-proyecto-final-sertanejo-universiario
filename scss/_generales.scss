@@ -19,6 +19,7 @@ body{
 /* MENU */
 header{
     .menu{
+    @include flex;
     list-style-type: square;
     position: fixed;
     top: 0;
@@ -26,19 +27,20 @@ header{
     background-color: $colorMenuNav;
     text-align: center;
     width: 100vw;
-    height: 150px;   
+    height: 100px;
+    padding-left: 0;   
         li{
             display: inline-block;
             padding: 0px 10px;
             .logoMenu{
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
             a{
             color: $colorTextoBlack;
             font-weight: normal;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 25px;
             display:block;
             padding: 0px 20px;
             /* padding-bottom: 10px; */
@@ -47,23 +49,6 @@ header{
     }
     .navbar{
         display: none;
-        background-color: $colorMenuNav;
-        opacity: 0.7;
-        width: 100vw;
-        height: 85px; 
-        .logoMenu{
-            width: 80px;
-            height: 80px;
-            margin-top: 0;
-        }
-        a{
-            font-family: $fuentePrincipal;
-        }
-        a .navbar-brand{
-            font-family: $fuenteEspecial;
-            font-size: 20px
-        }
-
     }
 }
 

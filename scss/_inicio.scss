@@ -1,10 +1,5 @@
 .fotoPrincipalFondoInicio{
-    position: relative;
-    background:$colorFondoClaro;
-    overflow: hidden;
-    margin-top: 150px;
-    width: 100vw;
-    height: 900px;
+    @include fotosPrincipales;
     h1 {
         font-family: $fuenteEspecial;
         padding: 300px 100px;
