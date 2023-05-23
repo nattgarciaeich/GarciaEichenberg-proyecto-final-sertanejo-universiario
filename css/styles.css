@@ -606,7 +606,7 @@ header .navbar {
   /* INICIO */
   .fotoPrincipalFondoInicio {
     margin-top: 75px;
-    width: 90%;
+    width: 100%;
     height: 500px;
   }
   .fotoPrincipalFondoInicio h1 {
@@ -648,7 +648,7 @@ header .navbar {
   /* TOP 10 */
   .fotoPrincipalFondoTop10 {
     margin-top: 75px;
-    width: 90%;
+    width: 100%;
     height: 500px;
   }
   .fotoPrincipalFondoTop10 h1 {
@@ -675,7 +675,7 @@ header .navbar {
   /* CONTACTO */
   .fotoPrincipalFondoContacto {
     margin-top: 75px;
-    width: 90%;
+    width: 100%;
     height: 500px;
   }
   .fotoPrincipalFondoContacto h1 {
@@ -695,7 +695,7 @@ header .navbar {
   /* ARTISTAS */
   .fotoPrincipalFondoArtistas {
     margin-top: 75px;
-    width: 90%;
+    width: 100%;
     height: 500px;
   }
   .fotoPrincipalFondoArtistas h1 {
@@ -725,7 +725,7 @@ header .navbar {
   /* CONOCE MAS */
   .fotoPrincipalFondoConoce {
     margin-top: 75px;
-    width: 90%;
+    width: 100%;
     height: 500px;
   }
   .fotoPrincipalFondoConoce h1 {
@@ -733,14 +733,14 @@ header .navbar {
     font-size: 30px;
   }
   .historiaGrid {
-    width: 90%;
-    grid-template-columns: 1fr;
+    width: 80%;
+    grid-template-columns: 0.7fr;
     grid-template-rows: 0.7fr 0.7fr 0.5fr;
     grid-template-areas: "raiz" "sofrencia" "referentes";
   }
   .raiz {
-    width: 90%;
-    margin: 20px 40px;
+    width: 100%;
+    margin: 20px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -752,8 +752,8 @@ header .navbar {
   .raiz p {
     width: 90%;
     font-size: 15px;
-    padding: 10px 10px 5px 10px;
-    margin-bottom: 0;
+    padding: 5px 10px 5px 5px;
+    margin-right: 0;
   }
   .raiz .raizVideo {
     width: 400px;
@@ -803,7 +803,6 @@ header .navbar {
     width: 100%;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    /*       gap: 10px 14px; */
     grid-template-areas: "logo nosotros" "logo redes" "logo news";
     margin-left: 0;
   }
@@ -824,6 +823,10 @@ header .navbar {
   }
   .gridFooter .news {
     margin: 5px;
+    padding-bottom: 30px;
+  }
+  .gridFooter input {
+    width: 70%;
   }
 }
 
