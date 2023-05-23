@@ -1,0 +1,20 @@
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fotosPrincipales{
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+}
+
+@mixin flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

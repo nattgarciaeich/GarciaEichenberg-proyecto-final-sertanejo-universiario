@@ -1,0 +1,99 @@
+.fotoPrincipalFondoContacto{
+    position: relative;
+    background:$colorFondoClaro;
+    overflow: hidden;
+    margin-top: 150px;
+    width: 100vw;
+    height: 900px;
+    h1 {
+        font-family: $fuenteEspecial;
+        padding: 300px 100px;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        font-size: 50px;
+        color: $colorTitulosFoto;
+    }
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.6;
+        background-image: url("../multimedia/maiaraPortada.jpg") ;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+}
+
+.formularioGrid{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "form";
+    width: 100wv;
+    justify-items: center;
+    align-items: center;
+    .formulario{
+        grid-area: form;
+        width: 600px;
+        box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
+        border-radius: 20px;
+        background-color: $colorFondoPscuro;
+        margin: 50px 0px;
+        padding: 30px;
+        font-weight: normal;
+        h2{
+        text-align: center;
+        padding-bottom:  20px;
+        font-weight: 500;
+        font-family: $fuenteEspecial;
+        }
+        div{
+            padding: 10px;
+            font-weight: normal;
+        }
+        input{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+
+        }
+        .siNo{
+            input{
+                width: auto;
+            }
+        }
+        fieldset{
+            input{
+            width: auto;
+            margin: 15px;
+        }
+
+        }
+
+    }
+
+    .botonBorrar{
+        background-color: $colorFondoClaro;
+        border-radius: 30px;
+        margin: 10px;
+        border-color: $colorFondoClaro;
+        &:hover{
+            background-color: $colorMenuNav;
+            border-color: $colorMenuNav;
+        }
+    }
+
+    .botonEnviar{
+        @extend .botonBorrar;
+    }
+}

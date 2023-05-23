@@ -1,0 +1,841 @@
+/* $colorFondoClaro: #e0e1dd;
+$colorFondoMedio:#b9bab3;
+$colorFondoPscuro: #7a7d73;
+$colorTextoBlack: black;
+$colorTitulosFoto: #1a1a19b3;
+$colorMenuNav: rgba(224,225,221,.6);
+$colorBordesBox: #bcbcb9; */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../multimedia/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* MENU */
+header .menu {
+  list-style-type: square;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(224, 225, 221, 0.6);
+  text-align: center;
+  width: 100vw;
+  height: 150px;
+}
+header .menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+header .menu li .logoMenu {
+  width: 150px;
+  height: 150px;
+}
+header .menu li a {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  padding: 0px 20px;
+  /* padding-bottom: 10px; */
+}
+header .navbar {
+  display: none;
+  background-color: rgba(224, 225, 221, 0.6);
+  width: 100vw;
+  height: 85px;
+}
+header .navbar .logoMenu {
+  width: 80px;
+  height: 80px;
+  margin-top: 0;
+}
+header .navbar a {
+  font-family: "Secular One", sans-serif;
+  font-size: 20px;
+}
+
+/* FOOTER */
+.gridFooter {
+  display: grid;
+  width: 98vw;
+  height: 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 14px;
+  grid-template-areas: "logo nosotros redes news";
+  justify-content: space-around;
+  align-content: start;
+  justify-items: stretch;
+  align-items: start;
+}
+.gridFooter .divLogo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
+}
+.gridFooter .divLogo .logoFooter {
+  width: 130px;
+  height: 130px;
+}
+.gridFooter .nosotros {
+  grid-area: nosotros;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .redes {
+  grid-area: redes;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .news {
+  grid-area: news;
+  margin: 50px 30px 30px 30px;
+}
+.gridFooter .news .newsletter {
+  font-size: 15px;
+}
+
+.fotoPrincipalFondoInicio {
+  position: relative;
+  background: #d9ae94;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100vw;
+  height: 900px;
+}
+.fotoPrincipalFondoInicio h1 {
+  font-family: "Secular One", sans-serif;
+  padding: 300px 100px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(21, 21, 20, 0.7019607843);
+}
+.fotoPrincipalFondoInicio:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url("../multimedia/portadaInicio2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.destacadosGrid {
+  overflow: auto;
+  margin: 40px 80px;
+  display: grid;
+  width: 100wv;
+  height: 800px;
+  grid-template-columns: 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
+  grid-template-rows: 0.3fr 1.5fr;
+  grid-template-areas: "titulo titulo titulo titulo titulo" "foto1 foto2 foto3 foto4 foto5";
+  justify-content: space-evenly;
+  align-content: stretch;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.destacadosTitulo {
+  grid-area: titulo;
+  margin: 30px;
+  /* padding-top: 20px; */
+}
+.destacadosTitulo h2 {
+  font-weight: normal;
+  font-family: "Secular One", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.foto1, .foto5, .foto4, .foto3, .foto2 {
+  grid-area: foto1;
+  background-image: url("../multimedia/destacadoMaiara2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 15px 30px 15px;
+  border-radius: 15px;
+  opacity: 0.6;
+}
+.foto1:hover, .foto5:hover, .foto4:hover, .foto3:hover, .foto2:hover {
+  opacity: 1;
+  background-image: url("../multimedia/MaiaraMaraisaGif2.gif");
+}
+
+.foto2 {
+  grid-area: foto2;
+  background-image: url("../multimedia/destacadoHenrJu.png");
+}
+
+.foto3 {
+  grid-area: foto3;
+  background-image: url("../multimedia/destacadoLuan.png");
+}
+
+.foto4 {
+  grid-area: foto4;
+  background-image: url("../multimedia/destacadoMarilia.png");
+}
+.foto4:hover {
+  background-image: url("../multimedia/MariliaMendozaGif300x800.gif");
+}
+
+.foto5 {
+  grid-area: foto5;
+  background-image: url("../multimedia/destacadoGusLima.png");
+}
+.foto5:hover {
+  background-image: url("../multimedia/GustavoLimaGif.gif");
+}
+
+.fotoPrincipalFondoArtistas {
+  position: relative;
+  background: #d9ae94;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100vw;
+  height: 900px;
+}
+.fotoPrincipalFondoArtistas h1 {
+  font-family: "Secular One", sans-serif;
+  padding: 300px 100px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(21, 21, 20, 0.7019607843);
+}
+.fotoPrincipalFondoArtistas:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url("../multimedia/portadaArtistas.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.boxArtistasIndividual {
+  box-shadow: inset -1px 3px 8px 5px #b78b69;
+  margin: 40px 30px;
+  border-radius: 20px;
+  background-color: #b78b69;
+}
+
+.boxFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+}
+
+.titulodDerecho {
+  text-align: right;
+  margin-right: 25px;
+}
+
+.boxArtistas h2 {
+  font-size: 25px;
+  padding: 20px 20px 0px 25px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+  margin-left: 25px;
+}
+.boxArtistas .boxArtistasFoto {
+  width: 350px;
+  height: 350px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.boxArtistas p {
+  padding: 30px 30px;
+  font-weight: normal;
+}
+.boxArtistas .enlaces, .boxArtistas .enlacesIz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+.boxArtistas .enlacesIz {
+  justify-content: start;
+  margin-left: 20px;
+}
+.boxArtistas a {
+  text-align: center;
+  padding: 10px 15px;
+  margin: 0 20px 20px 0px;
+  font-weight: normal;
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  color: black;
+  background-color: #d9ae94;
+}
+.boxArtistas a:hover {
+  background-color: rgba(224, 225, 221, 0.6);
+}
+
+.fotoPrincipalFondoConoce {
+  position: relative;
+  background: #d9ae94;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100vw;
+  height: 900px;
+}
+.fotoPrincipalFondoConoce h1 {
+  font-family: "Secular One", sans-serif;
+  padding: 300px 100px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(21, 21, 20, 0.7019607843);
+}
+.fotoPrincipalFondoConoce:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url("../multimedia/brunoPortada.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.historiaGrid {
+  display: grid;
+  width: 100wv;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.6fr;
+  grid-template-areas: "raiz sofrencia" "referentes referentes";
+  justify-content: space-evenly;
+  align-content: stretch;
+  align-items: start;
+  justify-items: center;
+}
+
+.raiz {
+  grid-area: raiz;
+  width: 600px;
+  box-shadow: inset -1px 3px 8px 5px #b78b69;
+  background-color: #b78b69;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
+.raiz h2 {
+  font-size: 25px;
+  padding: 20px 20px 10px 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+.raiz p {
+  width: 600px;
+  text-align: justify;
+  padding: 10px 20px 5px 20px;
+  font-weight: normal;
+}
+.raiz .raizVideo {
+  width: 600px;
+  padding: 10px 20px 20px 20px;
+}
+.raiz .raizFoto {
+  width: 600px;
+  padding: 10px 20px;
+}
+
+.sofrencia {
+  grid-area: sofrencia;
+  width: 600px;
+  background-color: #b78b69;
+  box-shadow: inset -1px 3px 8px 5px #b78b69;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
+.sofrencia h2 {
+  font-size: 25px;
+  padding: 20px 20px 10px 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+.sofrencia p {
+  width: 600px;
+  text-align: justify;
+  padding: 10px 20px 5px 20px;
+  font-weight: normal;
+}
+.sofrencia .sofrenciaFoto {
+  width: 600px;
+  height: 360px;
+  padding: 10px 20px 20px 20px;
+}
+.sofrencia .sofrenciaVideo {
+  width: 600px;
+  padding: 10px 20px;
+}
+
+.carrouselBox {
+  grid-area: referentes;
+  width: 600px;
+}
+.carrouselBox .referentesFoto {
+  width: 350px;
+  margin: 10px 130px;
+}
+.carrouselBox h2 {
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  font-weight: 500;
+}
+
+.fotoPrincipalFondoContacto {
+  position: relative;
+  background: #d9ae94;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100vw;
+  height: 900px;
+}
+.fotoPrincipalFondoContacto h1 {
+  font-family: "Secular One", sans-serif;
+  padding: 300px 100px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(21, 21, 20, 0.7019607843);
+}
+.fotoPrincipalFondoContacto:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url("../multimedia/maiaraPortada.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.formularioGrid {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "form";
+  width: 100wv;
+  justify-items: center;
+  align-items: center;
+}
+.formularioGrid .formulario {
+  grid-area: form;
+  width: 600px;
+  box-shadow: inset -1px 3px 8px 5px #b78b69;
+  border-radius: 20px;
+  background-color: #b78b69;
+  margin: 50px 0px;
+  padding: 30px;
+  font-weight: normal;
+}
+.formularioGrid .formulario h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+.formularioGrid .formulario div {
+  padding: 10px;
+  font-weight: normal;
+}
+.formularioGrid .formulario input {
+  width: 100%;
+}
+.formularioGrid .formulario textarea {
+  width: 100%;
+}
+.formularioGrid .formulario .siNo input {
+  width: auto;
+}
+.formularioGrid .formulario fieldset input {
+  width: auto;
+  margin: 15px;
+}
+.formularioGrid .botonBorrar, .formularioGrid .botonEnviar {
+  background-color: #d9ae94;
+  border-radius: 30px;
+  margin: 10px;
+  border-color: #d9ae94;
+}
+.formularioGrid .botonBorrar:hover, .formularioGrid .botonEnviar:hover {
+  background-color: rgba(224, 225, 221, 0.6);
+  border-color: rgba(224, 225, 221, 0.6);
+}
+.fotoPrincipalFondoTop10 {
+  position: relative;
+  background: #d9ae94;
+  overflow: hidden;
+  margin-top: 150px;
+  width: 100vw;
+  height: 900px;
+}
+.fotoPrincipalFondoTop10 h1 {
+  font-family: "Secular One", sans-serif;
+  padding: 300px 100px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(21, 21, 20, 0.7019607843);
+}
+.fotoPrincipalFondoTop10:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url("../multimedia/LuanSantanaPortada2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.cancionesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "spotify spotify spotify spotify spotify" "album1 album2 album3 album4 album5";
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.cancionesGrid .canciones {
+  grid-area: spotify;
+  width: 90%;
+  height: 600px;
+  background-color: #b58463;
+  overflow: auto;
+  box-shadow: inset -1px 3px 8px 5px #b58463;
+  border-radius: 20px;
+  margin: 50px 0px;
+}
+.cancionesGrid .canciones h2 {
+  text-align: center;
+  padding: 30px;
+  font-weight: 500;
+}
+.cancionesGrid .canciones .listaSpotify {
+  height: 450px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.cancionesGrid .album1, .cancionesGrid .album5, .cancionesGrid .album4, .cancionesGrid .album3, .cancionesGrid .album2 {
+  padding: 15px;
+  grid-area: album1;
+}
+.cancionesGrid .album2 {
+  grid-area: album2;
+}
+.cancionesGrid .album3 {
+  grid-area: album3;
+}
+.cancionesGrid .album4 {
+  grid-area: album4;
+}
+.cancionesGrid .album5 {
+  grid-area: album5;
+}
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  /* MENU */
+  header .menu {
+    display: none;
+    /* width: 100vw; 
+    height: 85px; 
+        ul{
+            display: flex;
+            flex-direction: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+
+            li{
+                padding: 0;
+                .logoMenu{
+                    width: 90px;
+                    height: 90px;
+                    padding: 0;
+                }
+                a{
+                font-size: 15px;
+                padding: 0px 0px;
+                } 
+            }
+        } */
+  }
+  header .navbar {
+    display: inline-block;
+  }
+  /* INICIO */
+  .fotoPrincipalFondoInicio {
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+  }
+  .fotoPrincipalFondoInicio h1 {
+    padding: 150px 100px;
+    font-size: 30px;
+  }
+  .destacadosGrid {
+    margin: 40px 50px;
+    width: 90%;
+    height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "titulo" "foto1" "foto2" "foto3" "foto4" "foto5";
+  }
+  .destacadosTitulo {
+    margin: 15px 0 10px 0;
+    padding-top: 10px;
+  }
+  .destacadosTitulo h2 {
+    font-size: 20px;
+  }
+  .foto1, .foto2, .foto3, .foto4, .foto5 {
+    margin: 5px 10px 5px 10px;
+    background-image: url(../multimedia/destacadoMaiaraHor.png);
+  }
+  .foto2 {
+    background-image: url(../multimedia/destacadoHenrJuHor.png);
+  }
+  .foto3 {
+    background-image: url(../multimedia/destacadoLuanHor.png);
+  }
+  .foto4 {
+    background-image: url(../multimedia/destacadoMariliaHor.jpg);
+  }
+  .foto5 {
+    margin-bottom: 10px;
+    background-image: url(../multimedia/destacadoGusLimaHor.png);
+  }
+  /* TOP 10 */
+  .fotoPrincipalFondoTop10 {
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+  }
+  .fotoPrincipalFondoTop10 h1 {
+    padding: 150px 100px;
+    font-size: 30px;
+  }
+  .cancionesGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "spotify spotify" "album1 album1" "album2 album2" "album3 album3" "album4 album4" "album5 album5";
+  }
+  .cancionesGrid .canciones {
+    height: 500px;
+  }
+  .cancionesGrid .canciones h2 {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .cancionesGrid .canciones .listaSpotify {
+    height: 400px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  /* CONTACTO */
+  .fotoPrincipalFondoContacto {
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+  }
+  .fotoPrincipalFondoContacto h1 {
+    padding: 150px 100px;
+    font-size: 30px;
+  }
+  .formularioGrid .formulario {
+    font-size: 15px;
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px;
+  }
+  .formularioGrid .formulario h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  /* ARTISTAS */
+  .fotoPrincipalFondoArtistas {
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+  }
+  .fotoPrincipalFondoArtistas h1 {
+    padding: 150px 100px;
+    font-size: 30px;
+  }
+  .boxArtistasIndividual {
+    width: 80%;
+    margin: 30px 40px;
+  }
+  .boxFlex {
+    flex-flow: wrap;
+    padding: 10px;
+  }
+  .boxArtistas h2 {
+    font-size: 15px;
+    padding: 10px 10px 0px 15px;
+  }
+  .boxArtistas .boxArtistasFoto {
+    width: 300px;
+    height: 250px;
+    padding: 5px 10px;
+  }
+  .boxArtistas p {
+    padding: 10px 10px;
+  }
+  /* CONOCE MAS */
+  .fotoPrincipalFondoConoce {
+    margin-top: 85px;
+    width: 90%;
+    height: 500px;
+  }
+  .fotoPrincipalFondoConoce h1 {
+    padding: 150px 100px;
+    font-size: 30px;
+  }
+  .historiaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.5fr;
+    grid-template-areas: "raiz" "sofrencia" "referentes";
+  }
+  .raiz {
+    width: 90%;
+    margin: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .raiz h2 {
+    font-size: 20px;
+  }
+  .raiz p {
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 10px 5px 10px;
+    margin-bottom: 0;
+  }
+  .raiz .raizVideo {
+    width: 400px;
+  }
+  .raiz .raizFoto {
+    width: 400px;
+  }
+  .sofrencia {
+    width: 90%;
+    margin: 20px 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sofrencia h2 {
+    font-size: 20px;
+  }
+  .sofrencia p {
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 10px 5px 10px;
+    margin-bottom: 0;
+  }
+  .sofrencia .sofrenciaVideo {
+    width: 400px;
+    padding: 10px 20px 20px 20px;
+  }
+  .sofrencia .sofrenciaFoto {
+    width: 400px;
+    padding-bottom: 20px;
+  }
+  .carrouselBox {
+    width: 400px;
+  }
+  .carrouselBox .referentesFoto {
+    width: 250px;
+    margin: 10px 80px;
+  }
+  .carrouselBox h2 {
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  /* FOOTER */
+  .gridFooter {
+    width: 100%;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    /*       gap: 10px 14px; */
+    grid-template-areas: "logo nosotros" "logo redes" "logo news";
+    margin-left: 0;
+  }
+  .gridFooter .divLogo {
+    align-self: start;
+  }
+  .gridFooter h5 {
+    font-size: 15px;
+  }
+  .gridFooter p {
+    font-size: 15px;
+  }
+  .gridFooter .nosotros {
+    margin: 5px;
+  }
+  .gridFooter .redes {
+    margin: 5px;
+  }
+  .gridFooter .news {
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
