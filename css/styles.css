@@ -679,25 +679,25 @@ header .navbar {
     background-image: url(../multimedia/destacadoMaiaraHor.jpg);
   }
   .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover {
-    background-image: url("../multimedia/MaiaraGifChico.jpg");
+    background-image: url("../multimedia/MaiaraGifChico.gif");
   }
   .foto2 {
     background-image: url(../multimedia/destacadoHenrJuHor.jpg);
   }
   .foto2:hover {
-    background-image: url("../multimedia/HenrGifChico.jpg");
+    background-image: url("../multimedia/HenrGifChico.gif");
   }
   .foto3 {
     background-image: url(../multimedia/destacadoLuanHor.jpg);
   }
   .foto3:hover {
-    background-image: url("../multimedia/LuanGifChico.jpg");
+    background-image: url("../multimedia/LuanGifChico.gif");
   }
   .foto4 {
     background-image: url(../multimedia/destacadoMariliaHor.jpg);
   }
   .foto4:hover {
-    background-image: url("../multimedia/MariliaGifChico.jpg");
+    background-image: url("../multimedia/MariliaGifChico.gif");
   }
   .foto5 {
     margin-bottom: 10px;
