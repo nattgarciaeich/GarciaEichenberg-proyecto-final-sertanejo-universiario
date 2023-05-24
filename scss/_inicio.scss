@@ -59,7 +59,7 @@
 
 .foto1 {
     grid-area: foto1; 
-    background-image: url("../multimedia/destacadoMaiara2.png");
+    background-image: url("../multimedia/destacadoMaiara\ \(2\).jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@
 .foto2{
     @extend .foto1;
     grid-area: foto2;
-    background-image: url("../multimedia/destacadoHenrJu.png");
+    background-image: url("../multimedia/destacadoHenrJu.jpg");
     &:hover{
         opacity: 1;
         background-image: url("../multimedia/HenrGifAlto.gif");
@@ -85,7 +85,7 @@
 .foto3{
     @extend .foto1;
     grid-area: foto3;
-    background-image: url("../multimedia/destacadoLuan.png");
+    background-image: url("../multimedia/destacadoLuan.jpg");
     &:hover{
         opacity: 1;
         background-image: url("../multimedia/LuanGifAlto.gif");
@@ -95,7 +95,7 @@
 .foto4{
     @extend .foto1;
     grid-area: foto4;
-    background-image: url("../multimedia/destacadoMarilia.png");
+    background-image: url("../multimedia/destacadoMarilia.jpg");
     &:hover{
         background-image: url("../multimedia/MariliaGifAlto.gif");
     }
@@ -104,7 +104,7 @@
 .foto5{
     @extend .foto1;
     grid-area: foto5;
-    background-image: url("../multimedia/destacadoGusLima.png");
+    background-image: url("../multimedia/destacadoGusLima.jpg");
     &:hover{
         background-image: url("../multimedia/GustavoGifAlto.gif");
     }

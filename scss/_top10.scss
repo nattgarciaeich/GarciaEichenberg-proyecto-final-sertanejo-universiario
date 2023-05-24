@@ -40,15 +40,16 @@
         grid-area: spotify;
         width: 90%;
         height: 600px;
-        background-color:$colorFondoMedio;
+        background-color:$colorOpacity;
         overflow: auto;
-        box-shadow: inset -1px 3px 8px 5px $colorBordesBox;
         border-radius: 20px;
         margin: 50px 0px;
         h2{
             text-align: center;
+            font-size: 40px;
             padding: 30px;
             font-weight: 500;
+            font-family: $fuenteEspecial;
         }
         .listaSpotify{
             height: 450px;
@@ -59,6 +60,28 @@
     .album1{
         padding: 15px;
         grid-area: album1;
+        background-color: $colorFondoMedio;
+        border-radius: 20px;
+        margin: 10px;
+        height: 200px;
+        @include flexWrap;
+        iframe{
+            display:none;
+        }
+        h3{
+            font-size: 25px;
+            text-align: center
+        }
+        &:hover{
+            height: 100%;
+           background-color: $colorOpacity;
+            h3{
+                display:none;
+            }
+            iframe{
+                display: inline-block;
+            }
+        }
     }
     .album2{
         @extend .album1;

@@ -28,7 +28,8 @@ header{
     text-align: center;
     width: 100vw;
     height: 100px;
-    padding-left: 0;   
+    padding-left: 0;  
+    margin-right: 0; 
         li{
             display: inline-block;
             padding: 0px 10px;
@@ -43,13 +44,17 @@ header{
             font-size: 25px;
             display:block;
             padding: 0px 20px;
-            /* padding-bottom: 10px; */
+                &:hover{
+                    font-weight: 500;
+                }
+           
             } 
         }
     }
     .navbar{
         display: none;
     }
+    
 }
 
 /* FOOTER */
@@ -90,6 +95,10 @@ header{
         .newsletter{
             font-size: 15px;
         }
+    }
+    .logoRedes{
+        width: 60px;
+        height: 60px;
     }
 
 }

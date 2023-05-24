@@ -27,10 +27,9 @@
 }
 
 .boxArtistasIndividual{
-    box-shadow: inset -1px 3px 8px 5px $colorFondoPscuro;
     margin: 40px 30px;
     border-radius: 20px;
-    background-color: $colorFondoPscuro;
+    background-color: $colorOpacity;
     
 }
 
@@ -90,10 +89,13 @@
     width:180px;
     height: 50px;
     border-radius: 20px;
+    text-decoration: none;
     color:black;
-    background-color: $colorFondoClaro;
+    background-color: $colorOpacity;
+    border-color: $colorFondoMedio;
         &:hover{
-            background-color: $colorMenuNav;
+            background-color: $colorFondoClaro;
+ 
         }
     }
 }
