@@ -168,7 +168,7 @@ header .navbar {
 
 .foto1, .foto5, .foto4, .foto3, .foto2 {
   grid-area: foto1;
-  background-image: url("../multimedia/destacadoMaiara (2).jpg");
+  background-image: url("../multimedia/destacadoMaiara.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -676,19 +676,19 @@ header .navbar {
   }
   .foto1, .foto2, .foto3, .foto4, .foto5 {
     margin: 5px 10px 5px 10px;
-    background-image: url(../multimedia/destacadoMaiaraHor.png);
+    background-image: url(../multimedia/destacadoMaiaraHor.jpg);
   }
   .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover {
     background-image: url("../multimedia/MaiaraGifChico.jpg");
   }
   .foto2 {
-    background-image: url(../multimedia/destacadoHenrJuHor.png);
+    background-image: url(../multimedia/destacadoHenrJuHor.jpg);
   }
   .foto2:hover {
     background-image: url("../multimedia/HenrGifChico.jpg");
   }
   .foto3 {
-    background-image: url(../multimedia/destacadoLuanHor.png);
+    background-image: url(../multimedia/destacadoLuanHor.jpg);
   }
   .foto3:hover {
     background-image: url("../multimedia/LuanGifChico.jpg");
