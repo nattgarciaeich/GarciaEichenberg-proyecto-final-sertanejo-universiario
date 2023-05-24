@@ -82,21 +82,21 @@
     }
 
     a{
-    text-align: center;
-    padding: 10px 15px;
-    margin: 0 20px 20px 0px;
-    font-weight: normal;
-    width:180px;
-    height: 50px;
-    border-radius: 20px;
-    text-decoration: none;
-    color:black;
-    background-color: $colorOpacity;
-    border-color: $colorFondoMedio;
-        &:hover{
-            background-color: $colorFondoClaro;
- 
-        }
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0 20px 20px 0px;
+        font-weight: normal;
+        width:180px;
+        height: 50px;
+        border-radius: 20px;
+        text-decoration: none;
+        color:black;
+        background-color: $colorOpacity;
+        border-color: $colorFondoMedio;
+            &:hover{
+                background-color: $colorFondoClaro;
+     
+            }
     }
 }
 
